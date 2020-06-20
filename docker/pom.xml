@@ -41,7 +41,7 @@
                         <configuration>
                             <includeArtifactIds>business-demo-app</includeArtifactIds>
                             <!-- 此目录下的 artifacts 被加入到 docker build context 被build 进入 docker image -->
-                            <outputDirectory>${project.basedir}/target/docker</outputDirectory>
+                            <outputDirectory>${project.basedir}/src/main/docker</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -89,7 +89,7 @@
                                 <dockerFileDir>${project.basedir}/src/main/docker</dockerFileDir>
                                 <assembly>
                                     <!-- 添加需要加入到 docker build context 中的文件的路径  -->
-                                    <targetDir>${project.basedir}/target/docker</targetDir>
+                                    <targetDir>${project.basedir}/src/main/docker</targetDir>
                                 </assembly>
                             </build>
                             <!--配置docker-compose文件-->
