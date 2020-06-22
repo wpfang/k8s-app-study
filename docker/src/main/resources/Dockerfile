@@ -10,7 +10,7 @@ RUN set -x && \
     mkdir -p /var/log/app_log
 
 COPY *.sh ${APP_PATH}
-COPY target/dependencies/business-demo-app.jar ${APP_PATH}/business-demo-app.jar
+COPY business-demo-app.jar ${APP_PATH}/business-demo-app.jar
 
 RUN set -x && \
     chmod -R +x ${APP_PATH}/*.sh;

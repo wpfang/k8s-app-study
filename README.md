@@ -1,6 +1,6 @@
 # Java App K8S Study Demo Project
 
-requirement:
+prerequisites:
 - maven
 - docker
 
